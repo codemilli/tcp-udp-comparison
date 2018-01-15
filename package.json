@@ -1,0 +1,20 @@
+{
+  "name": "tcp-udp-comparison",
+  "version": "1.0.0",
+  "description": "Node sever for comparison between Web Socket and UDP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hckrmoon/tcp-udp-comparison.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hckrmoon/tcp-udp-comparison/issues"
+  },
+  "homepage": "https://github.com/hckrmoon/tcp-udp-comparison#readme"
+}
