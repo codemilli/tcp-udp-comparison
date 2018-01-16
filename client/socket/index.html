@@ -8,12 +8,16 @@
 
 <script src="js/socket.io.js"></script>
 <script>
-  var socket = io.connect('http://localhost:3000')
+  const target = '' || 'http://localhost:3000'
+  const socket = io.connect(target)
 
-  socket.emit('hello')
+  setInterval(() => {
+    socket.emit('RoundTripTest', Date.now())
+  }, 100)
 
-  socket.on('message', function (data) {
-    console.log(data)
+  socket.on('RoundTripTestResult', function (data) {
+    const now = Date.now()
+    console.log('Result : ', now - data)
   })
 </script>
 </body>
