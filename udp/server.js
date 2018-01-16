@@ -7,7 +7,7 @@ server.on('listening', function () {
   const address = server.address()
   const str = `UDP Server listening on ${address.address}:${address.port}`
   console.log(str)
-});
+})
 
 server.on('error', function (err) {
   console.error('UDP Server get error ', err.message)
@@ -27,6 +27,6 @@ server.on('message', function (message, remote) {
       to: ${remote.address}:${remote.port}
     `)
   })
-});
+})
 
-server.bind(PORT, HOST);
+server.bind(PORT, HOST)
